@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess the word</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    
+    <header>
+            <div class="ReactTitle ">
+              <h3>Guess The Word</h3>
+            </div>
+            
+    </header>
+    
+    <main role="main" class="container" style="margin-bottom: 100px;">
+     <div class="contains">
+       <h4 class="text-start">
+        Guess The Word </h4>
+        <p class="text-start">
+        Using context. When you guess the meaning of a word from context, you need to consider first the immediate context, i.e. the other words in the sentence. If this is not enough, you need to use the wider context, i.e. sentences which come before and after the one which contains the word you are guessing. </p>
+    
+        <p class="text-start">One player (or more) has a word - either a word on a card, or a word they've come up with themselves. They must give clues to their team, or all the other players, who must try to guess what that word is. There are usually some sort of communications limits on the clues that the clue-giver(s) can give.
+
+        </p>
+
+        <p>You are given an array of unique strings words where words[i] is six letters long. One word of words was chosen as a secret word You are also given the helper object Master. You may call Master.guess(word) where word is a six-letter-long string, and it must be from words. Master.guess(word) returns:  -1 if word is not from words, or</p>
+       
+        <h5>Guess The Word</h5>
+        <label for="guessInput">Enter your guess:</label>
+        <input type="text" id="guessInput" placeholder="Type a 6-letter word">
+        <button type="button" class="" onclick="submitGuess()"> Guess</button>
+        <div id="output"></div>
+       </div>
+    </main>
+
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-center px-5">
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/JS/guess word.js"></script>
+    <script src=""></script>
+    <script src="assets/JS/theme.js" defer></script>
+  </body>
+</html>
